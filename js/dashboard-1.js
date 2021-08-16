@@ -46,10 +46,10 @@ document.getElementById('deposite-button').addEventListener('click', function ()
 });
 //withdraw event handaler
 document.getElementById('withdraw-button').addEventListener('click', function () {
-    /*     const newwithdrawAmount = getInputValue('withdraw-input');
-        current balance er theeke withdraw beshi korte chaile hbe na setar validation [const currentBalance = getCurrentBalance();&& newwithdrawAmount < currentBalance);  if (newwithdrawAmount > currentBalance) {
-            console.log('please input correct ammount');
-        }]  */
+    const newwithdrawAmount = getInputValue('withdraw-input');
+    /*  current balance er theeke withdraw beshi korte chaile hbe na setar validation [const currentBalance = getCurrentBalance();&& newwithdrawAmount < currentBalance);  if (newwithdrawAmount > currentBalance) {
+       console.log('please input correct ammount');
+   }]  */
     const currentBalance = getCurrentBalance();
     if (newwithdrawAmount > 0 && newwithdrawAmount < currentBalance) {
         UpdateTotalField('withdraw-total', newwithdrawAmount);
